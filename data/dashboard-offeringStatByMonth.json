@@ -1,0 +1,58 @@
+{"contractOffering": [
+  {
+    "yearmonth":"2015/12",
+    "amount": 6000
+  },
+  {
+    "yearmonth":"2016/01",
+    "amount": 5000
+  },
+  {
+    "yearmonth":"2016/02",
+    "amount": 7000
+  },
+  {
+    "yearmonth":"2016/03",
+    "amount": 7800
+  }
+]
+,
+  "thanksOffering": [
+    {
+      "yearmonth":"2015/12",
+      "amount": 2000
+    },
+    {
+      "yearmonth":"2016/01",
+      "amount": 1500
+    },
+    {
+      "yearmonth":"2016/02",
+      "amount": 1000
+    },
+    {
+      "yearmonth":"2016/03",
+      "amount": 1100
+    }
+  ]
+,
+"offering": [
+{
+"yearmonth":"2015/12",
+"amount": 10000
+},
+{
+"yearmonth":"2016/01",
+"amount": 12000
+},
+{
+"yearmonth":"2016/02",
+"amount": 13000
+},
+{
+"yearmonth":"2016/03",
+"amount": 12500
+}
+]
+
+}

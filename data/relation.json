@@ -1,0 +1,14 @@
+[
+  {
+    "relationId":1,
+    "relationName": "Self"
+  },
+  {
+    "relationId":2,
+    "relationName": "Wife"
+  },
+  {
+    "relationId":3,
+    "relationName": "Son"
+  }
+]

@@ -1,0 +1,79 @@
+<div class="container-fluid">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Search Result</h3>
+        </div>
+        <div class="panel-body search-result">
+            <div class="row" ng-show="familySearchCtrl.familySearchList.length!=0">
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                        <tr>
+                            <th>Family#</th>
+                            <th>Householder Name</th>
+                            <th>Name</th>
+                            <th>Baptized Name</th>
+                            <th>Sex</th>
+                            <th>Relation</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Zipcode</th>
+                            <th>Phone#</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in familySearchCtrl.familySearchList">
+                                <td>
+                                    {{item.id}}
+                                </td>
+                                <td>
+                                    {{item.householderName}}
+                                </td>
+                                <td>
+                                    {{item.name}}
+                                </td>
+                                <td>
+                                    {{item.baptismName}}
+                                </td>
+                                <td>
+                                    {{item.sex}}
+                                </td>
+                                <td>
+                                    {{item.relation}}
+                                </td>
+                                <td>
+                                    {{item.address1}}
+                                </td>
+                                <td>
+                                    {{item.city}}
+                                </td>
+                                <td>
+                                    {{item.state}}
+                                </td>
+                                <td>
+                                    {{item.zipcode}}
+                                </td>
+                                <td>
+                                    {{item.homePhone}}
+                                </td>
+                                <td>
+                                    <a class="btn btn-success btn-sm" ui-sref="familyregister({id: item.id})">Details</a>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                     </table>
+                </div>
+            </div>
+            <div class="row" ng-show="familySearchCtrl.familySearchList == 0">
+                <div class="alert alert-warning" role="alert">There is no family matched!</div>
+            </div>
+            <div class="row">
+                <a ui-sref="familyregister" class="btn btn-primary btn-rounded">Create a family</a>
+            </div>
+        </div>
+    </div>
+</div>

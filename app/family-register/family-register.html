@@ -1,0 +1,235 @@
+
+<div class="panel panel-default">
+<div class="panel-heading">Family Information</div>
+    <div class="container-fluid cou-container">
+        <div class="row cou-row">
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_Address1">Address1:</label>
+                     <input name="Family.Address1" ng-model="familyRegsiterCtrl.familyList.address1" class="col-sm-8 cou-textbox" type="text" value="">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_HomePhone">Home Phone</label>
+                    <input name="Family.HomePhone" ng-model="familyRegsiterCtrl.familyList.homePhone" class="col-sm-8 cou-textbox"type="text" value="">
+                </div>
+            </div>
+        </div>
+        <div class="row cou-row">
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_Address2">Address2:</label>
+                    <input name="Family.Address2" ng-model="familyRegsiterCtrl.familyList.address2" class="col-sm-8 cou-textbox" type="text" value="">
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_WorkPhone">Work Phone</label>
+                    <input name="Family.WorkPhone" ng-model="familyRegsiterCtrl.familyList.workPhone" class="col-sm-8 cou-textbox" type="text" value="">
+
+                </div>
+            </div>
+        </div>
+        <div class="row cou-row">
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_City">City:</label>
+                    <input name="Family.City" ng-model="familyRegsiterCtrl.familyList.city" class="col-sm-8 cou-textbox" type="text" value="">
+
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_CellPhone">Cell Phone</label>
+                    <input name="Family.mobilePhone" ng-model="familyRegsiterCtrl.familyList.mobilePhone" class="col-sm-8 cou-textbox" type="text" value="">
+
+                </div>
+            </div>
+        </div>
+        <div class="row cou-row">
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_State">State:</label>
+                    <div class="form-inline controls">
+                        <select class="col-sm-8 form-control cou-form-control" name="myState" id="myState"
+                                ng-options="s.stateCode as s.stateName for s in familyRegsiterCtrl.stateList"
+                                ng-model="familyRegsiterCtrl.familyList.state">
+
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_Fax">Fax</label>
+                    <input name="Family.Fax" ng-model="familyRegsiterCtrl.familyList.fax" class="col-sm-8 cou-textbox" type="text" value="">
+
+                </div>
+            </div>
+        </div>
+        <div class="row cou-row">
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4  control-label" for="Family_Zipcode">Zipcode:</label>
+                    <div class="controls">
+                        <input name="Family.Zipcode" ng-model="familyRegsiterCtrl.familyList.zipcode" class="col-sm-8 cou-textbox" type="text" value="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_Region">Region</label>
+                    <div class="form-inline controls">
+
+                        <select class="col-sm-8 form-control cou-form-control" name="Family.Region" id="myRegion"
+                                ng-options="r.id as r.name for r in familyRegsiterCtrl.regionList"
+                                ng-model="familyRegsiterCtrl.familyList.region">
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cou-row">
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_Country">Country:</label>
+                    <div class="form-inline controls">
+                        <select class="col-sm-8 form-control cou-form-control" name="Family.Country" id="myCountry"
+                                ng-options="c.countryCode as c.countryName for c in familyRegsiterCtrl.countryList"
+                                ng-model="familyRegsiterCtrl.familyList.country">
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="control-group">
+                    <label class="col-sm-4 control-label" for="Family_Subregion">Subregion</label>
+                    <div class="form-inline controls">
+
+                        <select class="col-sm-8 form-control cou-form-control" name="Family.Subregion" id="mySubregion"
+                                ng-options="s.id as s.name for s in (familyRegsiterCtrl.subregionList | filter : {regionId : familyRegsiterCtrl.familyList.region})"
+                                ng-model="familyRegsiterCtrl.familyList.subregion">
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cou-row">
+            <div class="col-sm-6">
+                <label class="col-sm-4 control-label">CreatedDate</label>
+                <p class="col-sm-8 well well-sm cou-well-sm cou-well">{{familyRegsiterCtrl.familyList.createdDate | date:'medium'}}</p>
+            </div>
+            <div class="col-sm-6">
+                <label class="col-sm-4 control-label">Last Updated Date</label>
+                <p class="col-sm-8 well well-sm cou-well-sm cou-well">{{familyRegsiterCtrl.familyList.lastedUpdatedDate | date:'medium'}}</p>
+            </div>
+        </div>
+        <div class="row cou-row">
+            <div class="col-sm-12">
+                <div class="control-group">
+                    <div class="controls" ng-hide="familyRegsiterCtrl.createOption">
+                        <button class="btn btn-primary" ng-click="familyRegsiterCtrl.addMemberGeneral()"> Add family member </button>
+                        <button class="btn btn-primary btnFamilyUpdate" ng-click="familyRegsiterCtrl.update(familyRegsiterCtrl.familyList)"> Save </button>
+                    </div>
+                    <div class="controls" ng-show="familyRegsiterCtrl.createOption">
+                        <button class="btn btn-primary" ng-click="familyRegsiterCtrl.save(familyRegsiterCtrl.familyList)"> Save & Add a member </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="panel panel-default" ng-hide="familyRegsiterCtrl.createOption">
+    <div class="panel-heading">Family members</div>
+        <div class="container-fluid cou-container">
+            <div class="row cou-row search-result" ng-show="familyRegsiterCtrl.familyList.familyMember.length!=0">
+
+                <div class="table-responsive">
+
+                    <table class="table table-condensed table-striped table-hover no-margin">
+                        <thead>
+                        <tr>
+                            <th>English Name</th>
+                            <th>Korean Name</th>
+                            <th>Baptized Name</th>
+                            <th>Sex</th>
+                            <th>Relation</th>
+                            <th>Birth Date</th>
+                            <th>Baptized Date</th>
+                            <th>Confirmation Date</th>
+                            <th>Married Date</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="member in familyRegsiterCtrl.familyList.familyMember">
+                            <td>
+                                {{member.englishFirstName + member.englishLastName}}
+                            </td>
+                            <td>
+                               {{member.koreanLastName + member.koreanFirstName}}
+                            </td>
+                            <td>
+                                {{member.baptismName}}
+                            </td>
+                            <td>
+                                {{member.sex}}
+                            </td>
+                            <td>
+                                {{member.relation.name}}
+                            </td>
+                            <td>
+                                {{member.birthDate | date:'shortDate'}}
+                            </td>
+                            <td>
+                                {{member.baptizedDate | date:'shortDate'}}
+                            </td>
+                            <td>
+                                {{member.confirmationDate | date:'shortDate'}}
+                            </td>
+                            <td>
+                                {{member.marriedDate | date:'shortDate'}}
+                            </td>
+                            <td>
+                                <div class="btn-group" uib-dropdown dropdown-append-to-body>
+                                    <button class="btn btn-success dropdown-toggle btn-sm" uib-dropdown-toggle type="button">
+                                        Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right cou-dropdown-menu" uib-dropdown-menu role="menu">
+                                        <li><a ng-click="familyRegsiterCtrl.editMemberGeneral(member)">General</a></li>
+                                        <li><a ng-click="familyRegsiterCtrl.addEditMemberBaptism(member)">Batism</a></li>
+                                        <li><a ng-click="familyRegsiterCtrl.addEditMemberConfirmation(member)">Confirmation</a></li>
+                                        <li><a ng-click="familyRegsiterCtrl.addEditMemberMatrimony(member)">Marital Information</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+            <div class="row" ng-show="familyRegsiterCtrl.familyList.familyMember == 0">
+                <div class="alert alert-warning" role="alert">There are no family members!</div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+

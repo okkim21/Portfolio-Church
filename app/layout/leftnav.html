@@ -1,0 +1,49 @@
+
+<div class="logo">
+    <a ui-sref="home" class="logo-expanded">
+        <i class="glyphicon glyphicon-tree-deciduous visible-xs visible-sm visible-md visible-lg"></i> <span class="side-label visible-sm visible-md visible-lg">Church Office</span>
+    </a>
+</div>
+<nav class="cou-navigation">
+
+    <ul id="sidenavparent" class="list-unstyled">
+        <li ui-sref-active="active">
+           <a ui-sref="dashboard">
+               <i class="glyphicon glyphicon-dashboard"></i>
+               <span class="nav-label">Dashboard</span>
+           </a>
+        </li>
+        <li ui-sref-active="active">
+            <a href="#"  ui-sref="churchsetting" data-toggle="collapse" data-target="#ulsetting">
+                <i class="glyphicon glyphicon-wrench"></i>
+                <span class="nav-label">Settings</span>
+            </a>
+            <ul id="ulsetting" class="collapse" data-parent="#sidenavparent">
+                <li ui-sref-active="active">
+                    <a ui-sref="churchsetting">Church</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="churchsetting">Region</a>
+                </li>
+            </ul>
+        </li>
+        <li ui-sref-active="active">
+            <a href="#" ui-sref="familyregister" data-toggle="collapse" data-target="#ulfamily">
+                <i class="glyphicon glyphicon-user"></i>
+                <span class="nav-label">Family</span>
+            </a>
+            <ul id="ulfamily" class="collapse" data-parent="sidenavparent">
+                <li ui-sref-active="active">
+                    <a ui-sref="familyregister">Register</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="familyregister">Move out</a>
+                </li>
+                <li ui-sref-active="active">
+                    <a ui-sref="familyregister">Search for move out family</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</nav>

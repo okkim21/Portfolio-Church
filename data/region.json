@@ -1,0 +1,14 @@
+[
+  {
+    "regionId":1,
+    "regionName": "Bothell"
+  },
+  {
+    "regionId":2,
+    "regionName": "Seattle"
+  },
+  {
+    "regionId":3,
+    "regionName": "Everret"
+  }
+]

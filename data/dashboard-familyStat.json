@@ -1,0 +1,42 @@
+{
+  "familyTotal" : 200,
+  "familyMemberTotal" : 1000,
+  "moveOutFamilyTotal":100,
+  "details":[
+    {
+      "yearmonth":"2015/07",
+      "registeredFamilyCount": 1,
+      "registeredFamilyMemberCount": 3,
+      "MoveOutFamilyCount": 0
+    },
+    {
+      "yearmonth":"2015/08",
+      "registeredFamilyCount": 0,
+      "registeredFamilyMemberCount": 0,
+      "MoveOutFamilyCount": 0
+    },
+    {
+      "yearmonth":"2015/09",
+      "registeredFamilyCount": 2,
+      "registeredFamilyMemberCount": 7,
+      "MoveOutFamilyCount": 1
+    },
+    {
+      "yearmonth":"2015/10",
+      "registeredFamilyCount": 1,
+      "registeredFamilyMemberCount": 4,
+      "MoveOutFamilyCount": 0
+    },
+    {
+      "yearmonth":"2015/11",
+      "registeredFamilyCount": 0,
+      "registeredFamilyMemberCount": 0,
+      "MoveOutFamilyCount": 2
+    },
+    {
+      "yearmonth":"2015/12",
+      "registeredFamilyCount": 3,
+      "registeredFamilyMemberCount": 11,
+      "MoveOutFamilyCount": 1
+    }
+]}

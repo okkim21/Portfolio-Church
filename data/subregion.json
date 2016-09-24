@@ -1,0 +1,33 @@
+[
+  {
+    "subregionId": 1,
+    "regionId":1,
+    "subregionName": "Bothell1"
+  },
+  {
+    "subregionId": 2,
+    "regionId":1,
+    "subregionName": "Bothell2"
+  },
+  {
+    "subregionId": 3,
+    "regionId":2,
+    "subregionName": "Seattle1"
+  },
+  {
+    "subregionId": 4,
+    "regionId":2,
+    "subregionName": "Seattle2"
+  },
+  {
+    "subregionId": 5,
+    "regionId":3,
+    "subregionName": "Everret1"
+  },
+  {
+    "subregionId": 6,
+    "regionId":3,
+    "subregionName": "Everret2"
+  }
+
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "countryCode":"KR",
+    "countryName": "Korea"
+  },
+  {
+    "countryCode":"USA",
+    "countryName": "United State"
+  },
+  {
+    "countryCode":"UK",
+    "countryName": "United Kingtom"
+  }
+]

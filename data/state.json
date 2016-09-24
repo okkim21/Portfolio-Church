@@ -1,0 +1,14 @@
+[
+  {
+    "stateCode":"CA",
+    "stateName": "California"
+  },
+  {
+    "stateCode":"NY",
+    "stateName": "New York"
+  },
+  {
+    "stateCode":"WA",
+    "stateName": "Washington"
+  }
+]

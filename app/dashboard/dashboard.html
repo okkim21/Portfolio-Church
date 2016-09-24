@@ -1,0 +1,69 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default offeringbox">
+                <div class="panel-heading">Offering Statistics by Week</div>
+                <div class="panel-body">
+
+                    <canvas id="bar-week" class="chart chart-bar"
+                            chart-data="dashBoardCtrl.offeringStatWeekData" chart-labels="dashBoardCtrl.offeringStatWeekLabels" chart-legend="true" chart-series="dashBoardCtrl.offeringStatWeekSeries">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default offeringbox">
+                <div class="panel-heading">Offering Statistics by Month</div>
+                <div class="panel-body">
+                    <canvas id="bar-month" class="chart chart-bar"
+                            chart-data="dashBoardCtrl.offeringStatMonthData" chart-labels="dashBoardCtrl.offeringStatMonthLabels" chart-legend="true" chart-series="dashBoardCtrl.offeringStatMonthSeries">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="statgrid familystat">
+                    <div class="familybox">
+                        <div class="familytotal">
+                            <span class="number-lg">{{dashBoardCtrl.familyTotal}} </span>
+                            <span class="char-lg"> Families</span>
+                            <i class="fa fa-bar-chart-o"></i>
+
+                        </div>
+                    </div>
+                    <div class="familybox">
+                        <div class="familymembertotal">
+                            <span class="number-lg">{{dashBoardCtrl.familyMemberTotal}} </span>
+                            <span class="char-lg"> Members</span>
+                            <i class="fa fa-line-chart"></i>
+                        </div>
+                    </div>
+                    <div class="familybox">
+                        <div class="moveouttotal">
+                            <span class="number-lg">{{dashBoardCtrl.moveOutFamilyTotal}} </span>
+                            <span class="char-lg"> Move Out</span>
+                            <i class="fa fa-pie-chart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-heading">Family Statistics</div>
+                <div class="panel-body">
+
+                    <canvas id="line" class="chart chart-line" chart-data="dashBoardCtrl.familyStatData"
+                            chart-labels="dashBoardCtrl.familyStatLabels" chart-legend="true" chart-series="dashBoardCtrl.familyStatSeries"
+                            chart-click="dashBoardCtrl.onClick" >
+                    </canvas>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

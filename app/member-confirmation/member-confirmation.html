@@ -1,0 +1,72 @@
+
+<div class="modal-header">Confirmation</div>
+<div class="modal-body">
+    <form role="form" class="form-horizontal">
+        <div class="form-group form-inline controls cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_ConfirmationDate">Confirmation Date</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="Date" ng-model="memberConfirmationCtrl.memberConfirmation.confirmationDate"
+                       datepicker-popup="MM/dd/yyyy" is-open="memberConfirmationCtrl.opened" ng-click="memberConfirmationCtrl.open($event)"
+                       close-text="Close"/>
+            </div>
+        </div>
+
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_ConfirmationChurch">Confirmation Church</label>
+            <div class="col-sm-8">
+                <input name="Member.ConfirmationChurch" ng-model="memberConfirmationCtrl.memberConfirmation.confirmationChurch" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_Priest">Priest</label>
+            <div class="col-sm-8">
+                <input name="Member.Priest" ng-model=" memberConfirmationCtrl.memberConfirmation.priest" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_Father">Father</label>
+            <div class="col-sm-8">
+                <input name="Member.Father" ng-model="memberConfirmationCtrl.memberConfirmation.father" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_Mother">Mother</label>
+            <div class="col-sm-8">
+                <input name="Member.Mother" ng-model="memberConfirmationCtrl.memberConfirmation.mother" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_GodFather">GodFather</label>
+            <div class="col-sm-8">
+                <input name="Member.GodFather" ng-model="memberConfirmationCtrl.memberConfirmation.godFather" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_GodMother">GodMother</label>
+            <div class="col-sm-8">
+                <input name="Member.GodMother" ng-model="memberConfirmationCtrl.memberConfirmation.godMother" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label">CreatedDate</label>
+            <div class="col-sm-8">
+                <p class="well well-sm cou-well-sm cou-well">{{memberConfirmationCtrl.memberConfirmation.createdDate | date:'medium'}}</p>
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label">Last Updated Date</label>
+            <div class="col-sm-8">
+                <p class="well well-sm cou-well-sm cou-well">{{memberConfirmationCtrl.memberConfirmation.lastedUpdatedDate | date:'medium'}}</p>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="memberConfirmationCtrl.save(memberConfirmationCtrl.memberConfirmation)">Save</button>
+    <button class="btn btn-default" ng-click="memberConfirmationCtrl.cancel()">Cancel</button>
+</div>
+
+
+

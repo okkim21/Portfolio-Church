@@ -1,0 +1,90 @@
+
+<div class="modal-header">Baptism</div>
+<div class="modal-body">
+    <form role="form" class="form-horizontal">
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_KBaptismName">Korean Baptism Name</label>
+            <div class="col-sm-8">
+                <input name="Member.KBaptismName" ng-model="memberBaptismCtrl.memberBaptism.koreanBaptismName" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_EBaptismName">English Baptism Name</label>
+            <div class="col-sm-8">
+                <input name="Member.EBaptismName" ng-model="memberBaptismCtrl.memberBaptism.engBaptismName" type="text" value="">
+            </div>
+        </div>
+
+        <div class="form-group form-inline controls cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_BaptizedDate">Baptized Date</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="Date" ng-model="memberBaptismCtrl.memberBaptism.baptizedDate"
+                       datepicker-popup="MM/dd/yyyy" is-open="memberBaptismCtrl.opened" ng-click="memberBaptismCtrl.open($event)"
+                       close-text="Close"/>
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_BaptizedChurch">Baptized Church</label>
+            <div class="col-sm-8">
+                <input name="Member.BaptizedChurch" ng-model="memberBaptismCtrl.memberBaptism.baptizedChurch" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group form-inline controls cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_FirstCommunion">First Communion</label>
+            <div class="col-sm-8">
+                <input type="checkbox" ng-model="memberBaptismCtrl.memberBaptism.firstCommunion">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_Priest">Priest</label>
+            <div class="col-sm-8">
+                <input name="Member.Priest" ng-model="memberBaptismCtrl.memberBaptism.priest" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_Father">Father</label>
+            <div class="col-sm-8">
+                <input name="Member.Father" ng-model="memberBaptismCtrl.memberBaptism.father" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_Mother">Mother</label>
+            <div class="col-sm-8">
+                <input name="Member.Mother" ng-model="memberBaptismCtrl.memberBaptism.mother" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_GodFather">GodFather</label>
+            <div class="col-sm-8">
+                <input name="Member.GodFather" ng-model="memberBaptismCtrl.memberBaptism.godFather" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_GodMother">GodMother</label>
+            <div class="col-sm-8">
+                <input name="Member.GodMother" ng-model="memberBaptismCtrl.memberBaptism.godMother" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label">CreatedDate</label>
+            <div class="col-sm-8">
+                <p class="well well-sm cou-well-sm cou-well">{{memberBaptismCtrl.memberBaptism.createdDate | date:'medium'}}</p>
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label">Last Updated Date</label>
+            <div class="col-sm-8">
+                <p class="well well-sm cou-well-sm cou-well">{{memberBaptismCtrl.memberBaptism.lastedUpdatedDate | date:'medium'}}</p>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="memberBaptismCtrl.save(memberBaptismCtrl.memberBaptism)">Save</button>
+    <button class="btn btn-default" ng-click="memberBaptismCtrl.cancel()">Cancel</button>
+</div>
+
+
+

@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Church UI",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "keywords": [
+    "Church"
+  ],
+  "author": "Amy",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.0",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7"
+  }
+}

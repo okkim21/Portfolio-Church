@@ -1,0 +1,10 @@
+<div class="modal-header">
+    <h2>{{confirmModalCtrl.properties.title}}</h2>
+</div>
+<div class="modal-body">
+    {{confirmModalCtrl.properties.message}}
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="confirmModalCtrl.ok()">{{confirmModalCtrl.properties.buttons[0]}}</button>
+    <button class="btn btn-default" ng-click="confirmModalCtrl.cancel()">{{confirmModalCtrl.properties.buttons[1]}}</button>
+</div>

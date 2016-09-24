@@ -1,0 +1,19 @@
+{
+  "name": "churchofficeui",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-bootstrap": "~0.14.3",
+    "angular-ui-router": "~0.2.15",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "toastr": "~2.1.2",
+    "angular-mocks": "~1.4.9",
+    "angular-chart.js": "~0.8.8",
+    "angular-underscore-module": "^1.0.3",
+    "angular-animate": "^1.5.5",
+    "angular-messages": "^1.5.5",
+    "angular-resource": "^1.5.7"
+  },
+  "devDependencies": {}
+}

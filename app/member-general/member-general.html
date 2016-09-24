@@ -1,0 +1,110 @@
+
+<div class="modal-header">General</div>
+<div class="modal-body">
+    <form role="form" class="form-horizontal">
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_KLastName">Korean Last Name</label>
+            <div class="col-sm-8">
+                <input name="Member.KLastName" ng-model="memberGeneralCtrl.memberGeneral.koreanLastName" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_KFirstName">Korean First Name</label>
+            <div class="col-sm-8">
+                <input name="Member.KFirstName" ng-model="memberGeneralCtrl.memberGeneral.koreanFirstName" type="text" value="">
+            </div>
+        </div>
+
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_ELastName">English Last Name</label>
+            <div class="col-sm-8">
+                <input name="Member.ELastName" ng-model="memberGeneralCtrl.memberGeneral.englishLastName" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_EFirstName">English First Name</label>
+            <div class="col-sm-8">
+                <input name="Member.EFirstName" ng-model="memberGeneralCtrl.memberGeneral.englishFirstName" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_Sex">Sex</label>
+            <div class="col-sm-8">
+                <label class="col-sm-6">
+                    <input type="radio" ng-model="memberGeneralCtrl.memberGeneral.sex" value="F"> Female
+                </label>
+                <label class="col-sm-6">
+                    <input type="radio" ng-model="memberGeneralCtrl.memberGeneral.sex" value="M"> Male
+                </label>
+            </div>
+        </div>
+        <div class="form-group cou-form-group ">
+            <label class="col-sm-4 control-label" for="Member_Relation">Relation</label>
+            <div class="col-sm-8">
+                <select class="form-control" name="myRelation" id="myRelation"
+                        ng-options="s.name for s in memberGeneralCtrl.relationList track by s.id"
+                        ng-model="memberGeneralCtrl.memberGeneral.relation">
+                </select>
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_Occupation">Occupation</label>
+            <div class="col-sm-8">
+                <input name="Member.Occupation" ng-model="memberGeneralCtrl.memberGeneral.occupation" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group form-inline controls cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_BirthDate">Birth Date</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="Date" ng-model="memberGeneralCtrl.memberGeneral.birthDate"
+                       datepicker-popup="MM/dd/yyyy" is-open="memberGeneralCtrl.opened" ng-click="memberGeneralCtrl.open($event)"
+                       close-text="Close"/>
+            </div>
+        </div>
+        <div class="form-group cou-form-group">
+            <label class="col-sm-4  control-label" for="Member_BirthPlace">Birth Place</label>
+            <div class="col-sm-8">
+                <input name="Member.BirthPlace" ng-model="memberGeneralCtrl.memberGeneral.birthPlace" type="text" value="">
+            </div>
+        </div>
+        <div class="form-group form-inline controls cou-form-group">
+            <label class="col-sm-4 control-label" for="Member_Status">Status</label>
+            <div class="col-sm-8">
+                <select class="form-control" name="myStatus" id="myStatus"
+                        ng-options="s.id as s.name for s in memberGeneralCtrl.statusList track by s.id"
+                        ng-model="memberGeneralCtrl.memberGeneral.status">
+
+                </select>
+            </div>
+        </div>
+            <div class="form-group form-inline controls cou-form-group">
+                <label class="col-sm-4 control-label" for="Member_StatusDate">Status Date</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="Date" ng-model="memberGeneralCtrl.memberGeneral.statusDate"
+                           datepicker-popup="MM/dd/yyyy" is-open="memberGeneralCtrl.opened2" ng-click="memberGeneralCtrl.open2($event)"
+                           close-text="Close"/>
+                </div>
+            </div>
+            <div class="form-group cou-form-group">
+                <label class="col-sm-4 control-label">CreatedDate</label>
+                <div class="col-sm-8">
+                    <p class="well well-sm cou-well-sm cou-well">{{memberGeneralCtrl.memberGeneral.createdDate | date:'medium'}}</p>
+                </div>
+            </div>
+            <div class="form-group cou-form-group">
+                <label class="col-sm-4 control-label">Last Updated Date</label>
+                <div class="col-sm-8">
+                    <p class="well well-sm cou-well-sm cou-well">{{memberGeneralCtrl.memberGeneral.lastedUpdatedDate | date:'medium'}}</p>
+                </div>
+            </div>
+
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="memberGeneralCtrl.save(memberGeneralCtrl.memberGeneral)">Save</button>
+    <button class="btn btn-default" ng-click="memberGeneralCtrl.cancel()">Cancel</button>
+</div>
+
+
+

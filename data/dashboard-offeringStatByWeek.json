@@ -1,0 +1,58 @@
+{"contractOffering": [
+  {
+    "week":"2nd week of Feb",
+    "amount": 2000
+  },
+  {
+    "week":"3th week of Feb",
+    "amount": 1500
+  },
+  {
+    "week":"4th Week of Feb",
+    "amount": 2500
+  },
+  {
+    "week":"1st Week of Mar",
+    "amount": 2100
+  }
+]
+,
+  "thanksOffering": [
+    {
+      "week":"2nd week of Feb",
+      "amount": 500
+    },
+    {
+      "week":"3th week of Feb",
+      "amount": 400
+    },
+    {
+      "week":"4th Week of Feb",
+      "amount": 550
+    },
+    {
+      "week":"1st Week of Mar",
+      "amount": 650
+    }
+  ]
+,
+  "offering": [
+    {
+      "week":"2nd week of Feb",
+      "amount": 3000
+    },
+    {
+      "week":"3th week of Feb",
+      "amount": 3500
+    },
+    {
+      "week":"4th Week of Feb",
+      "amount": 4000
+    },
+    {
+      "week":"1st Week of Mar",
+      "amount": 3300
+    }
+  ]
+
+}

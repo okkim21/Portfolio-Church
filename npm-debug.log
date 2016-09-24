@@ -1,0 +1,170 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'jasmine' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'jasmine', null ]
+7 verbose cache add spec jasmine
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'jasmine',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'jasmine',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed jasmine@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for jasmine
+11 info addNameTag [ 'jasmine', 'latest' ]
+12 silly mapToRegistry name jasmine
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/jasmine
+16 verbose addNameTag registry:https://registry.npmjs.org/jasmine not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/jasmine
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 2:44:44 PM
+20 verbose request id 3910709c92db9498
+21 http request GET https://registry.npmjs.org/jasmine
+22 http 200 https://registry.npmjs.org/jasmine
+23 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 verbose headers   etag: '"ESHM075OLHD12KWVXBWIUUAMC"',
+23 verbose headers   'content-type': 'application/json',
+23 verbose headers   'content-encoding': 'gzip',
+23 verbose headers   'cache-control': 'max-age=300',
+23 verbose headers   'content-length': '3143',
+23 verbose headers   'accept-ranges': 'bytes',
+23 verbose headers   date: 'Tue, 28 Jun 2016 21:44:44 GMT',
+23 verbose headers   via: '1.1 varnish',
+23 verbose headers   age: '171',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-served-by': 'cache-lax1439-LAX',
+23 verbose headers   'x-cache': 'HIT',
+23 verbose headers   'x-cache-hits': '3',
+23 verbose headers   'x-timer': 'S1467150284.772273,VS0,VE0',
+23 verbose headers   vary: 'Accept-Encoding' }
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"ESHM075OLHD12KWVXBWIUUAMC"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'content-encoding': 'gzip',
+24 silly get     'cache-control': 'max-age=300',
+24 silly get     'content-length': '3143',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Tue, 28 Jun 2016 21:44:44 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '171',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-lax1439-LAX',
+24 silly get     'x-cache': 'HIT',
+24 silly get     'x-cache-hits': '3',
+24 silly get     'x-timer': 'S1467150284.772273,VS0,VE0',
+24 silly get     vary: 'Accept-Encoding' } ]
+25 verbose get saving jasmine to /Users/okkim/.npm/registry.npmjs.org/jasmine/.cache.json
+26 silly addNameTag next cb for jasmine with tag latest
+27 silly addNamed jasmine@2.4.1
+28 verbose addNamed "2.4.1" is a plain semver version for jasmine
+29 silly mapToRegistry name jasmine
+30 silly mapToRegistry using default registry
+31 silly mapToRegistry registry https://registry.npmjs.org/
+32 silly mapToRegistry uri https://registry.npmjs.org/jasmine
+33 verbose addRemoteTarball https://registry.npmjs.org/jasmine/-/jasmine-2.4.1.tgz not in flight; adding
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/jasmine/-/jasmine-2.4.1.tgz',
+34 verbose addRemoteTarball   '9016dda453213d27ac6d43dc4ea97315a189085e' ]
+35 info retry fetch attempt 1 at 2:44:44 PM
+36 info attempt registry request try #1 at 2:44:44 PM
+37 http fetch GET https://registry.npmjs.org/jasmine/-/jasmine-2.4.1.tgz
+38 http fetch 200 https://registry.npmjs.org/jasmine/-/jasmine-2.4.1.tgz
+39 silly fetchAndShaCheck shasum 9016dda453213d27ac6d43dc4ea97315a189085e
+40 verbose addTmpTarball /var/folders/hy/hvkp9tgs4y120b7z2ly00g200000gn/T/npm-10740-ea7909e3/registry.npmjs.org/jasmine/-/jasmine-2.4.1.tgz not in flight; adding
+41 verbose addTmpTarball already have metadata; skipping unpack for jasmine@2.4.1
+42 silly cache afterAdd jasmine@2.4.1
+43 verbose afterAdd /Users/okkim/.npm/jasmine/2.4.1/package/package.json not in flight; writing
+44 verbose afterAdd /Users/okkim/.npm/jasmine/2.4.1/package/package.json written
+45 silly install resolved [ { name: 'jasmine',
+45 silly install resolved     description: 'Command line jasmine',
+45 silly install resolved     homepage: 'http://jasmine.github.io/',
+45 silly install resolved     keywords: [ 'test', 'jasmine', 'tdd', 'bdd' ],
+45 silly install resolved     license: 'MIT',
+45 silly install resolved     version: '2.4.1',
+45 silly install resolved     repository:
+45 silly install resolved      { type: 'git',
+45 silly install resolved        url: 'git+https://github.com/jasmine/jasmine-npm.git' },
+45 silly install resolved     scripts: { test: 'grunt && ./bin/jasmine.js' },
+45 silly install resolved     dependencies: { exit: '^0.1.2', glob: '^3.2.11', 'jasmine-core': '~2.4.0' },
+45 silly install resolved     bin: { jasmine: './bin/jasmine.js' },
+45 silly install resolved     main: './lib/jasmine.js',
+45 silly install resolved     devDependencies:
+45 silly install resolved      { grunt: '^0.4.2',
+45 silly install resolved        'grunt-cli': '^0.1.13',
+45 silly install resolved        'grunt-contrib-jshint': '^0.11.0',
+45 silly install resolved        shelljs: '^0.3.0' },
+45 silly install resolved     gitHead: '17344da242f81c61e4d19a895960bf9414fae07d',
+45 silly install resolved     bugs: { url: 'https://github.com/jasmine/jasmine-npm/issues' },
+45 silly install resolved     _id: 'jasmine@2.4.1',
+45 silly install resolved     _shasum: '9016dda453213d27ac6d43dc4ea97315a189085e',
+45 silly install resolved     _from: 'jasmine@latest',
+45 silly install resolved     _npmVersion: '2.12.1',
+45 silly install resolved     _nodeVersion: '0.12.7',
+45 silly install resolved     _npmUser: { name: 'slackersoft', email: 'gregg@slackersoft.net' },
+45 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+45 silly install resolved     dist:
+45 silly install resolved      { shasum: '9016dda453213d27ac6d43dc4ea97315a189085e',
+45 silly install resolved        tarball: 'https://registry.npmjs.org/jasmine/-/jasmine-2.4.1.tgz' },
+45 silly install resolved     directories: {},
+45 silly install resolved     _resolved: 'https://registry.npmjs.org/jasmine/-/jasmine-2.4.1.tgz' } ]
+46 info install jasmine@2.4.1 into /usr/local/lib
+47 info installOne jasmine@2.4.1
+48 verbose installOne of jasmine to /usr/local/lib not in flight; installing
+49 verbose lock using /Users/okkim/.npm/_locks/jasmine-166463d93d0f0777.lock for /usr/local/lib/node_modules/jasmine
+50 silly install write writing jasmine 2.4.1 to /usr/local/lib/node_modules/jasmine
+51 verbose unbuild lib/node_modules/jasmine
+52 silly gentlyRm /usr/local/lib/node_modules/jasmine is being purged from base /usr/local
+53 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jasmine
+54 verbose tar unpack /Users/okkim/.npm/jasmine/2.4.1/package.tgz
+55 verbose tar unpacking to /usr/local/lib/node_modules/jasmine
+56 silly gentlyRm /usr/local/lib/node_modules/jasmine is being purged
+57 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jasmine
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 error tar.unpack untar error /Users/okkim/.npm/jasmine/2.4.1/package.tgz
+60 verbose unlock done using /Users/okkim/.npm/_locks/jasmine-166463d93d0f0777.lock for /usr/local/lib/node_modules/jasmine
+61 verbose fstream_path /usr/local/lib/node_modules/jasmine
+62 verbose fstream_type Directory
+63 verbose fstream_class DirWriter
+64 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jasmine'
+64 verbose stack     at Error (native)
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+65 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+65 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+66 verbose cwd /Users/okkim/WorkSpace/ChurchOffice.UI.Web
+67 error Darwin 15.5.0
+68 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "jasmine"
+69 error node v4.3.0
+70 error npm  v2.14.12
+71 error path /usr/local/lib/node_modules/jasmine
+72 error code EACCES
+73 error errno -13
+74 error syscall mkdir
+75 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jasmine'
+75 error     at Error (native)
+75 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/jasmine']
+75 error   errno: -13,
+75 error   code: 'EACCES',
+75 error   syscall: 'mkdir',
+75 error   path: '/usr/local/lib/node_modules/jasmine',
+75 error   fstream_type: 'Directory',
+75 error   fstream_path: '/usr/local/lib/node_modules/jasmine',
+75 error   fstream_class: 'DirWriter',
+75 error   fstream_stack:
+75 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+75 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+75 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+76 error Please try running this command again as root/Administrator.
+77 verbose exit [ -13, true ]
+78 verbose unbuild lib/node_modules/jasmine
+79 silly gentlyRm /usr/local/lib/node_modules/jasmine is being purged from base /usr/local
+80 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/jasmine
