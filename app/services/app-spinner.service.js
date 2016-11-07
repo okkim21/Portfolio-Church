@@ -13,7 +13,6 @@
 
         return service;
 
-
         function hideSpinner() {
             toggleSpinner(false);
         }

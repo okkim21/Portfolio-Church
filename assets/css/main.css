@@ -1,4 +1,10 @@
 /* General */
+html{
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100px;
+}
+
 body {
     color: #797979;
     background-color: #edf0f0;
@@ -8,33 +14,6 @@ body {
     font-size: 14px;
 }
 
-html{
-    overflow-x: hidden;
-    position: relative;
-    min-height: 100px;
-}
-
-/* Animate */
-ng-include.ng-enter,
-[ng-include].ng-enter{
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-ng-include.ng-enter-active,
-[ng-include].ng-enter-active{
-    opacity: 1;
-}
-
-[ui-view].ng-enter {
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-[ui-view].ng-enter-active {
-    opacity: 1;
-
-}
 /* General Controls */
 /* Container*/
 .cou-container{
@@ -73,7 +52,8 @@ ng-include.ng-enter-active,
 }
 
 /* Data table */
-table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td {
+table.focus-on tbody tr.focused th,
+table.focus-on tbody tr.focused td {
     background-color: #6e8cd7;
     color: #ffffff;
 }
@@ -123,7 +103,6 @@ table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td {
     margin-bottom: 10px;
 }
 
-
 /* Header */
 header{
     background-color: #fff;
@@ -170,7 +149,6 @@ header{
     background-color: #F5F5F5;
 }
 
-
 .user-menu .dropdown-menu li {
     width: 100%;
     text-align: left !important;
@@ -187,7 +165,6 @@ header{
     font-size: 14px;
     vertical-align: middle;
     margin-left: 3px;
-
 }
 
 .dropdown .extended {
@@ -200,7 +177,6 @@ header{
     margin-top: 4px;
     -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-
 }
 
 .dropdown .extended li {
@@ -210,7 +186,6 @@ header{
 
 .dropdown .extended li a {
     padding: 10px 20px !important;
-
 }
 
 .dropdown .extended i {
@@ -230,22 +205,6 @@ header{
 
 .dropdown .pro-menu {
     width: 200px;
-
-}
-
-/* Responsive */
-@media all and (max-width: 450px) {
-
-    .username {
-        display: none;
-    }
-    .dropdown .extended i {
-        display: none;
-    }
-
-    .dropdown .pro-menu {
-        width: 100px;
-    }
 }
 
 /* Logo */
@@ -321,13 +280,6 @@ header{
     padding-right: 20px;
 }
 
-
-/*@media all and (min-width: 768px) {*/
-    /*.content {*/
-        /*margin-left: 230px;*/
-    /*}*/
-/*}*/
-
 /* Left menu */
 .cou-side-nav {
     background-color: #2f353f;
@@ -339,12 +291,6 @@ header{
     -moz-transition: left 0.3s linear;
     -webkit-transition: left 0.3s linear;
     transition: left 0.3s linear;
-}
-
-@media all and (min-width: 768px) {
-    .cou-side-nav{
-        left: 0px;
-    }
 }
 
 /* Toggle menu */
@@ -364,35 +310,25 @@ header{
     margin-left: 0px;
 }
 
-/* Responsive */
-@media all and (max-width: 768px) {
-    .cou-side-nav{
-        left: -230px;
-    }
+/* Animate */
+ng-include.ng-enter,
+[ng-include].ng-enter{
+    opacity: 0;
+    transition: opacity 1s;
+}
 
-    .content {
-        margin-left: 0px;
-    }
+ng-include.ng-enter-active,
+[ng-include].ng-enter-active{
+    opacity: 1;
+}
 
-    /* Toggle menu */
-    .cou-side-nav1{
-        left: 0px;
+[ui-view].ng-enter {
+    opacity: 0;
+    transition: opacity 1s;
+}
 
-    }
-
-    .content1 {
-        margin-left: 230px;
-    }
-
-    .cou-side-nav2{
-        left: -230px;
-
-    }
-
-    .content2 {
-        margin-left: 0px;
-    }
-
+[ui-view].ng-enter-active {
+    opacity: 1;
 }
 
 .cou-form-control{
@@ -400,7 +336,6 @@ header{
 }
 
 /* Dashboard */
-
 .statgrid{
     display: -webkit-flex;
     display: flex;
@@ -459,7 +394,6 @@ header{
 
 }
 
-
 .familymembertotal span{
     vertical-align: top;
 }
@@ -482,15 +416,12 @@ header{
     transform: rotate(5deg);
 }
 
-
 .moveouttotal{
     background-color: #D36B19;
     height: 100%;
     width: 100%;
     text-align: center;
-
 }
-
 
 .moveouttotal span{
     vertical-align: top;
@@ -530,14 +461,57 @@ header{
     vertical-align: middle;
 }
 
+/* Family Register */
+.cou-dropdown-menu{
+    font-size: 13px;
+}
+
+/* Responsive */
+@media all and (max-width: 450px) {
+
+    .username {
+        display: none;
+    }
+    .dropdown .extended i {
+        display: none;
+    }
+
+    .dropdown .pro-menu {
+        width: 100px;
+    }
+}
+
 @media all and (max-width: 768px) {
+    .cou-side-nav{
+        left: 0px;
+    }
+
     .statgrid{
         flex-direction: column;
     }
 
-}
+    .cou-side-nav{
+        left: -230px;
+    }
 
-/* Family Register */
-.cou-dropdown-menu{
-font-size: 13px;
+    .content {
+        margin-left: 0px;
+    }
+
+    /* Toggle menu */
+    .cou-side-nav1{
+        left: 0px;
+    }
+
+    .content1 {
+        margin-left: 230px;
+    }
+
+    .cou-side-nav2{
+        left: -230px;
+    }
+
+    .content2 {
+        margin-left: 0px;
+    }
 }

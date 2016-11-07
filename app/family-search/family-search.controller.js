@@ -1,37 +1,33 @@
 (function(){
-        'use strict';
+    'use strict';
 
-        angular
-            .module('app')
-            .controller('FamilySearchController', FamilySearchController)
+    angular
+        .module('app')
+        .controller('FamilySearchController', FamilySearchController)
 
-        FamilySearchController.$inject =['$stateParams','exception','familySearchService']
+    FamilySearchController.$inject =['$stateParams','exception','familySearchService']
 
-        function FamilySearchController($stateParams,exception, familySearchService){
-            var vm = this;
-            var searchString ="Kim Ok";
-            //var searchString = $stateParams.searchString;
+    function FamilySearchController($stateParams,exception, familySearchService){
+        var vm = this;
+        var searchString ="Kim Ok";
 
-            vm.familySearchList  =  [];
+        vm.familySearchList  =  [];
 
-            activate();
+        activate();
 
-            function activate() {
-               return getFamilySearch();
-            }
-
-            function getFamilySearch(){
-                return familySearchService.get(searchString)
-                    .then(function (result) {
-                        return vm.familySearchList = result;
-                    },
-                    exception.catcher('COU Failed for getting data')
-                );
-
-            }
+        function activate() {
+           return getFamilySearch();
         }
 
-    }
+        function getFamilySearch(){
+            return familySearchService.get(searchString)
+                .then(function (result) {
+                    return vm.familySearchList = result;
+                },
+                exception.catcher('COU Failed for getting data')
+            );
 
-)();
+        }
+    }
+})();
 

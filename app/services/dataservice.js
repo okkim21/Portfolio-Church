@@ -38,56 +38,18 @@
             return httpGet('data/dashboard-offeringStatByMonth.json')
         }
 
-
         function getFamilySearch(searchString){
-
             var params = {name:searchString};
-
             return httpGetwithParam('http://churchoffice-api.azurewebsites.net/api/search/',params);
-
-            /*return $http.get('data/familySearch.json/')
-             .then(getFamilySearchComplete)
-             .catch(exception.catcher('XHR Failed for getFamilySearch'));
-
-             function getFamilySearchComplete(data){
-             return data;
-             }*/
         }
-
-        //function getFamilyById(familyId){
-        //
-        //    return httpGet('http://churchoffice-api.azurewebsites.net/api/families/'+familyId);
-        //}
-        //
-        //function getState(){
-        //    return httpGet('data/state.json');
-        //}
-        //
-        //function getCountry(){
-        //    return httpGet('data/country.json');
-        //}
-        //
-        //function getRegion(){
-        //    var params = {name:'region'};
-        //
-        //    return httpGetwithParam('http://churchoffice-api.azurewebsites.net/api/codes/', params);
-        //}
-        //
-        //function getSubregion(){
-        //    var params = {name:'subregion'};
-        //
-        //    return httpGetwithParam('http://churchoffice-api.azurewebsites.net/api/codes/', params);
-        //}
 
         function getRelation(){
             var params = {name:'relation'};
-
             return httpGetwithParam('http://churchoffice-api.azurewebsites.net/api/codes/', params);
         }
 
         function getStatus(){
             var params = {name:'status'};
-
             return httpGetwithParam('http://churchoffice-api.azurewebsites.net/api/codes/', params);
         }
 
@@ -108,20 +70,17 @@
         }
 
         /** Private Methods **/
-
         function httpDelete(url){
             return httpExecute(url, 'DELETE');
         }
 
         function httpExecute(requestUrl, method, data){
-            //appSpinner.showSpinner();
             return $http({
                 url: baseUrl + requestUrl,
                 method: method,
                 data: data})
                 .then(function(response){
 
-                    //appSpinner.hideSpinner();
                     console.log('**response from EXECUTE', response);
                     return response.data;
                 })
@@ -135,8 +94,6 @@
                 params:params,
                 data: data})
                 .then(function(response){
-
-                    //appSpinner.hideSpinner();
                     console.log('**response from EXECUTE', response);
                     return response.data;
                 })
@@ -159,7 +116,6 @@
             return httpExecute(url, 'PUT', data);
         }
 
-
         function httpPost(url, data){
             return httpExecute(url, 'POST','', data);
         }
@@ -179,7 +135,5 @@
                 return httpPost(url, item);
             }
         }
-
     }
-
 })();

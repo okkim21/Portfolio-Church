@@ -24,6 +24,5 @@
                 return deferred.promise;
             }
         }
-
     };
 })();

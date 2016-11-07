@@ -384,7 +384,6 @@ describe("Testing a family register relatived functions", function(){
     var regionCodeService;
     var subregionCodeService;
 
-
     beforeEach(module('app'));
 
     beforeEach(inject(function(_$controller_,_$q_, _$rootScope_,_$stateParams_, _familyRegisterService_, _countryCodeService_, _stateCodeService_,_regionCodeService_,_subregionCodeService_){
@@ -397,7 +396,7 @@ describe("Testing a family register relatived functions", function(){
         stateCodeService = _stateCodeService_;
         regionCodeService=_regionCodeService_;
         subregionCodeService=_subregionCodeService_;
-    }))
+    }));
 
     it('should load search result by id', function(){
         spyOn(familyRegisterService, 'get').and.callFake(function() {
@@ -437,11 +436,5 @@ describe("Testing a family register relatived functions", function(){
         expect(familyRegisterService.get).toHaveBeenCalledWith(1160);
         expect($this.stateList.length).toBe(3);
         expect($this.countryList.length).toBe(3);
-        //expect($this.regionList.length).toBe(3);
-        //expect($this.subregionList.length).toBe(6);
-
     });
-
-
-
 });

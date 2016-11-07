@@ -21,7 +21,6 @@
         };
     }
 
-
     exceptionConfig.$inject = ['$provide'];
 
     function exceptionConfig($provide) {

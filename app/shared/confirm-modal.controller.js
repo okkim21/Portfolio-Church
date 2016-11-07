@@ -19,7 +19,5 @@
         function ok(){
             $modalInstance.close();
         }
-
-
     }
 })();

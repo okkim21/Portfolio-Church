@@ -21,14 +21,12 @@
                 <div class="control-group">
                     <label class="col-sm-4 control-label" for="Family_Address2">Address2:</label>
                     <input name="Family.Address2" ng-model="familyRegsiterCtrl.familyList.address2" class="col-sm-8 cou-textbox" type="text" value="">
-
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="control-group">
                     <label class="col-sm-4 control-label" for="Family_WorkPhone">Work Phone</label>
                     <input name="Family.WorkPhone" ng-model="familyRegsiterCtrl.familyList.workPhone" class="col-sm-8 cou-textbox" type="text" value="">
-
                 </div>
             </div>
         </div>
@@ -37,14 +35,12 @@
                 <div class="control-group">
                     <label class="col-sm-4 control-label" for="Family_City">City:</label>
                     <input name="Family.City" ng-model="familyRegsiterCtrl.familyList.city" class="col-sm-8 cou-textbox" type="text" value="">
-
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="control-group">
                     <label class="col-sm-4 control-label" for="Family_CellPhone">Cell Phone</label>
                     <input name="Family.mobilePhone" ng-model="familyRegsiterCtrl.familyList.mobilePhone" class="col-sm-8 cou-textbox" type="text" value="">
-
                 </div>
             </div>
         </div>
@@ -56,9 +52,7 @@
                         <select class="col-sm-8 form-control cou-form-control" name="myState" id="myState"
                                 ng-options="s.stateCode as s.stateName for s in familyRegsiterCtrl.stateList"
                                 ng-model="familyRegsiterCtrl.familyList.state">
-
                         </select>
-
                     </div>
                 </div>
             </div>
@@ -84,11 +78,9 @@
                 <div class="control-group">
                     <label class="col-sm-4 control-label" for="Family_Region">Region</label>
                     <div class="form-inline controls">
-
                         <select class="col-sm-8 form-control cou-form-control" name="Family.Region" id="myRegion"
                                 ng-options="r.id as r.name for r in familyRegsiterCtrl.regionList"
                                 ng-model="familyRegsiterCtrl.familyList.region">
-
                         </select>
                     </div>
                 </div>
@@ -102,7 +94,6 @@
                         <select class="col-sm-8 form-control cou-form-control" name="Family.Country" id="myCountry"
                                 ng-options="c.countryCode as c.countryName for c in familyRegsiterCtrl.countryList"
                                 ng-model="familyRegsiterCtrl.familyList.country">
-
                         </select>
                     </div>
                 </div>
@@ -111,11 +102,9 @@
                 <div class="control-group">
                     <label class="col-sm-4 control-label" for="Family_Subregion">Subregion</label>
                     <div class="form-inline controls">
-
                         <select class="col-sm-8 form-control cou-form-control" name="Family.Subregion" id="mySubregion"
                                 ng-options="s.id as s.name for s in (familyRegsiterCtrl.subregionList | filter : {regionId : familyRegsiterCtrl.familyList.region})"
                                 ng-model="familyRegsiterCtrl.familyList.subregion">
-
                         </select>
                     </div>
                 </div>
@@ -142,19 +131,15 @@
                         <button class="btn btn-primary" ng-click="familyRegsiterCtrl.save(familyRegsiterCtrl.familyList)"> Save & Add a member </button>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </div>
 </div>
 <div class="panel panel-default" ng-hide="familyRegsiterCtrl.createOption">
     <div class="panel-heading">Family members</div>
         <div class="container-fluid cou-container">
             <div class="row cou-row search-result" ng-show="familyRegsiterCtrl.familyList.familyMember.length!=0">
-
                 <div class="table-responsive">
-
                     <table class="table table-condensed table-striped table-hover no-margin">
                         <thead>
                         <tr>
@@ -216,15 +201,11 @@
                         </tr>
                         </tbody>
                     </table>
-
                 </div>
-
             </div>
             <div class="row" ng-show="familyRegsiterCtrl.familyList.familyMember == 0">
                 <div class="alert alert-warning" role="alert">There are no family members!</div>
-
             </div>
-
         </div>
     </div>
 </div>

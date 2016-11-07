@@ -22,19 +22,17 @@ html{
     height: 100%;
     top: 0px;
     left: 0px;
-    transition: left 0.3s linear;
     -moz-transition: left 0.3s linear;
     -webkit-transition: left 0.3s linear;
+    transition: left 0.3s linear;
 }
-
-
 
 /* Content */
 .content {
     margin-left: 230px;
-    transition: margin-left 0.3s linear;
     -moz-transition: margin-left 0.3s linear;
     -webkit-transition: margin-left 0.3s linear;
+    transition: margin-left 0.3s linear;
 }
 
 .content > .container-fluid {
@@ -91,7 +89,6 @@ header{
 }
 
 /* user */
-
 .dropdown .extended {
     width: 280px;
     padding: 0;
@@ -132,7 +129,6 @@ header{
     width: 200px;
 }
 
-
 .top-menu li {
     height: 100%;
     display: inline-block;
@@ -149,7 +145,9 @@ header{
     font-size: 16px;
 }
 
-.top-menu li >a:hover,.top-menu li >a:focus,.top-menu li >a:active {
+.top-menu li >a:hover,
+.top-menu li >a:focus,
+.top-menu li >a:active {
     background-color: #F5F5F5;
 }
 
@@ -196,7 +194,8 @@ header{
 }
 
 /* Datatable */
-table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td {
+table.focus-on tbody tr.focused th,
+table.focus-on tbody tr.focused td {
     background-color: #6e8cd7;
     color: #ffffff;
 }
@@ -204,7 +203,6 @@ table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td {
 /* Toggle menu */
 .cou-side-nav1{
     left: 0px;
-
 }
 
 .content1 {
@@ -213,7 +211,6 @@ table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td {
 
 .cou-side-nav2{
     left: -230px;
-
 }
 
 .content2 {
@@ -277,11 +274,11 @@ table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td {
 .cou-well{
     margin-bottom: 10px;
 }
+
 .cou-form-group
 {
     margin-bottom: 5px;
 }
-
 
 /* Dashboard */
 .familytotalstat {
@@ -289,12 +286,10 @@ table.focus-on tbody tr.focused th, table.focus-on tbody tr.focused td {
 }
 
 .familytotal{
-
-height: 60px;
+    height: 60px;
     background-color: #3F7577;
     padding: 5px 20px 0px 20px;
 }
-
 
 .familytotal i {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
@@ -310,14 +305,12 @@ height: 60px;
 }
 
 .familymembertotal{
-
     background-color: #67773F;
     padding: 5px 20px 0px 20px;
     height: 50px;
 }
 
 .moveouttotal{
-
     background-color: #D36B19;
     padding: 5px 20px 0px 20px;
     height: 50px;
@@ -348,7 +341,6 @@ height: 60px;
 .char-lg span{
     vertical-align: middle;
 }
-
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -407,6 +399,4 @@ height: 60px;
     .form-horizontal .control-label {
         padding-top: 3px;
     }
-
-
 }

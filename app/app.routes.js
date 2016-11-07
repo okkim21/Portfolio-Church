@@ -1,5 +1,3 @@
-
-
 (function(){
     'use strict';
 
@@ -37,7 +35,5 @@
                 url:'/church-setting',
                 templateUrl:'app/church-setting/church-setting.html'
             })
-
     }
-
 })();

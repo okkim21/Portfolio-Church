@@ -32,7 +32,6 @@ describe('Testing a family search function', function(){
         }
     ];
 
-
     var $this;
     var $q;
     var $rootScope;
@@ -64,7 +63,5 @@ describe('Testing a family search function', function(){
         expect($this.familySearchList[1].englishLastName).toBe(familySearchList[1].englishLastName);
         expect(familySearchService.get).toHaveBeenCalledWith('김옥');
     });
-
-
 });
 

@@ -1,23 +1,20 @@
 (function(){
-        'use strict';
+    'use strict';
 
-        angular
-            .module('app')
-            .controller('ShellController', ShellController)
+    angular
+        .module('app')
+        .controller('ShellController', ShellController)
 
-        ShellController.$inject =['$scope', '$state'];
+    ShellController.$inject =['$scope', '$state'];
 
-        function ShellController($scope, $state){
+    function ShellController($scope, $state){
 
-            $scope.$on('outEvent', function(){
-                $scope.leftclass  = "out" ;
-            })
-            $scope.$on('inEvent', function(){
-                $scope.leftclass  = "in" ;
-            })
-
-            $state.go("dashboard");
-        }
+        $scope.$on('outEvent', function(){
+            $scope.leftclass  = "out" ;
+        })
+        $scope.$on('inEvent', function(){
+            $scope.leftclass  = "in" ;
+        })
+        $state.go("dashboard");
     }
-
-)();
+})();

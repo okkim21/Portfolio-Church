@@ -41,7 +41,6 @@ describe("Testing dashboard", function(){
                "MoveOutFamilyCount": 1
            }
        ]};
-
     var offeringStatByWeekData ={"contractOffering": [
         {
             "week":"2nd week of Feb",
@@ -158,7 +157,6 @@ describe("Testing dashboard", function(){
         ]
 
     };
-
     var $controller;
     var $this;
     var $stateParams;
@@ -203,7 +201,5 @@ describe("Testing dashboard", function(){
         expect($this.familyStatList.familyTotal).toBe(familyStatData.familyTotal);
         expect($this.offeringStatByWeek.contractOffering[0].amount).toBe(offeringStatByWeekData.contractOffering[0].amount);
         expect($this.offeringStatByMonth.contractOffering[0].amount).toBe(offeringStatByMonthData.contractOffering[0].amount);
-
     })
-
 });
