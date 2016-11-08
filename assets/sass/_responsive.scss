@@ -1,0 +1,42 @@
+/*----------------------------------------------
+Responsive styles for small devices and tablet
+-------------------------------------------------*/
+@media all and (max-width: 450px) {
+  .username {
+    display: none;
+  }
+  .dropdown .extended i {
+    display: none;
+  }
+  .dropdown .pro-menu {
+    width: 100px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .cou-side-nav{
+    left: 0px;
+  }
+  .statgrid{
+    flex-direction: column;
+  }
+  .cou-side-nav{
+    left: -230px;
+  }
+  .content {
+    margin-left: 0px;
+  }
+  /* Toggle menu */
+  .cou-side-nav1{
+    left: 0px;
+  }
+  .content1 {
+    margin-left: 230px;
+  }
+  .cou-side-nav2{
+    left: -230px;
+  }
+  .content2 {
+    margin-left: 0px;
+  }
+}

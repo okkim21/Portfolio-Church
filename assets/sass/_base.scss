@@ -1,0 +1,297 @@
+/*-----------------------------------------
+ Base styles
+ -------------------------------------------*/
+
+html{
+  overflow-x: hidden;
+  position: relative;
+  min-height: 100px;
+}
+
+body {
+  color: #797979;
+  background-color: #edf0f0;
+  font-family: $sans-serif;
+  padding: 0px;
+  margin: 0px;
+  font-size: $font-size-base;
+}
+
+
+/* General Controls */
+/* Container*/
+.cou-container {
+  margin-top: 10px;
+}
+
+/* Row */
+.cou-row {
+  margin-top: 5px;
+}
+
+/* Textbox */
+.cou-textbox {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #DDDDDD;
+}
+
+/* button */
+.btn {
+  opacity: 0.9;
+}
+.btn-primary {
+  background-color: $blue;
+  border: 1px solid $blue;
+}
+.btn-rounded {
+  border-radius: 10px;
+}
+.btnFamilyUpdate {
+  float:right;
+}
+
+/* Data table */
+table.focus-on tbody tr.focused th,
+table.focus-on tbody tr.focused td {
+  background-color: $blue;
+  color: $white;
+}
+
+/* Overflow*/
+.cou-overflow{
+  overflow: visible;
+}
+
+/* Form */
+.cou-form-group {
+  margin-bottom: 5px;
+}
+
+/* Panel */
+.panel {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.panel-heading {
+  border-color: #eff2f7;
+  font-size: 16px;
+  padding: 0;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  padding-left: 0px;
+  padding-bottom: 15px;
+}
+.panel-default > .panel-heading {
+  background-color: #FFFFFF;
+  border-color: #DDDDDD;
+  color: #797979;
+}
+
+/* Text */
+.cou-well-sm{
+  padding: 3px;
+}
+.cou-well{
+  margin-bottom: 10px;
+}
+
+/* Header */
+header{
+  background-color: #fff;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
+  margin-top: 0px;
+}
+
+/* icons for small screen */
+.navbar-toggle {
+  margin: 8px 20px 8px 0px;
+  display: block;
+  padding-left: 0px;
+}
+.icon-bar {
+  background-color: #b3b3be;
+}
+
+/* user info */
+.user-menu {
+  li {
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    float: left;
+    line-height: 50px;
+    padding: 0px;
+    > a {
+      color: #979898;
+      text-align: center;
+      padding: 22px 15px;
+      font-size: 16px;
+      transition: all 0.3s;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #F5F5F5;
+      }
+    }
+  }
+}
+.user-menu .dropdown-menu {
+  li {
+    width: 100%;
+    text-align: left !important;
+    a {
+      font-size: $font-size-base;
+      text-align: left;
+      padding: 5px 15px;
+      transition: all 0.3s;
+    }
+  }
+}
+.username {
+  font-size: $font-size-base;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+.dropdown .extended {
+  width: 280px;
+  padding: 0;
+  margin-left: -1px;
+  z-index: 3;
+  border: none;
+  max-height: 330px;
+  margin-top: 4px;
+  -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  li {
+    border-bottom: 1px solid #f0f0f0;
+    line-height: 20px;
+    a {
+      padding: 10px 20px !important;
+    }
+  }
+
+  i {
+    float: left;
+    width: 38px;
+    margin-right: 10px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  p {
+    font-weight: 600;
+    background-color: #F5F5F5;
+    padding: 10px 15px 11px 15px;
+    margin-bottom: 0px;
+  }
+}
+.dropdown .pro-menu {
+  width: 200px;
+}
+
+/* Logo */
+.logo {
+  padding-top: 20px;
+  text-align: center;
+}
+.logo-expanded {
+  font-size: 20px;
+  letter-spacing: .05em;
+  color: #fff !important;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 28px;
+    vertical-align: middle;
+    color: $blue;
+    display: block;
+    text-decoration: none;
+  }
+}
+
+/* search */
+.app-search{
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.app-search a {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  color: #c4c4cd;
+
+  &:hover {
+    cursor: auto;
+  }
+}
+.app-search .form-control{
+  border: none;
+  font-size: 13px;
+  color: #444444;
+  padding-left: 20px;
+  background: #edf1f2;
+  box-shadow: none;
+  border-radius: 34px;
+  margin-top: 1px;
+}
+
+/* Search Result */
+.search-result{
+  font-size: 13px;
+}
+
+/* Content */
+.content {
+  margin-left: 230px;
+  -moz-transition: margin-left 0.3s linear;
+  -webkit-transition: margin-left 0.3s linear;
+  transition: margin-left 0.3s linear;
+}
+.content > .container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Animate */
+ng-include.ng-enter,
+[ng-include].ng-enter{
+  opacity: 0;
+  transition: opacity 1s;
+}
+ng-include.ng-enter-active,
+[ng-include].ng-enter-active{
+  opacity: 1;
+}
+[ui-view].ng-enter {
+  opacity: 0;
+  transition: opacity 1s;
+}
+[ui-view].ng-enter-active {
+  opacity: 1;
+}
+.cou-form-control{
+  height: 26px;
+}
+
+/* Family Register */
+.cou-dropdown-menu{
+  font-size: 13px;
+}

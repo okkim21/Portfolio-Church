@@ -1,0 +1,8 @@
+/*-------------------------------------------
+ Global stylesheet
+--------------------------------------------*/
+@import "settings"; // variables & mixins
+@import "base"; // global default styles
+@import "responsive"; // responsive styles for all the devices
+@import "leftmenu"; // left menu styles
+@import "dashboard"; // dashboard styles

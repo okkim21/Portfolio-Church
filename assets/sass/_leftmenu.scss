@@ -1,0 +1,120 @@
+/*-------------------------------------------
+ Left menu styles
+ --------------------------------------------*/
+
+/* Left menu */
+.cou-side-nav {
+  background-color: #2f353f;
+  width: 230px;
+  position:fixed;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  -moz-transition: left 0.3s linear;
+  -webkit-transition: left 0.3s linear;
+  transition: left 0.3s linear;
+}
+
+/* Toggle menu */
+.cou-side-nav1{
+  left: 0px;
+}
+.content1 {
+  margin-left: 230px;
+}
+.cou-side-nav2{
+  left: -230px;
+}
+.content2 {
+  margin-left: 0px;
+}
+
+/* 1st level menu */
+.cou-navigation {
+  position: absolute;
+  width: 230px;
+  height: 100%;
+  margin: 50px 0px 20px;
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px;
+
+    li {
+      position: relative;
+
+      a {
+        display: block;
+        list-style: none;
+        padding: 12px 25px;
+        color: #b4b6bd;
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: 400;
+        outline: none !important;
+        border-left: 3px solid #2f353f;
+        transition: all 0.3s;
+
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        i {
+          margin-right: 6px;
+          font-size: 18px;
+          width: 25px;
+          float: left;
+        }
+
+        .nav-label {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+.cou-navigation > ul > li:hover > a,
+.cou-navigation > ul > li.active:hover > a,
+.cou-navigation > ul > li.active > a {
+  color: #fff;
+  background: #272c35;
+  border-left: 3px solid #6e8cd7;
+  outline: none;
+}
+
+/* 2nd level submenu */
+.cou-navigation {
+  ul {
+    li {
+      ul {
+        display: none;
+        background-color: #272c35;
+        padding-bottom: 10px;
+        li {
+          a {
+            padding: 8px 25px 8px 55px;
+            color: #9E9E9E;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: all 0.3s;
+            font-size: 14px;
+            border-left: 0px solid #9E9E9E;
+            text-align: left;
+            display: block;
+            outline: none !important;
+
+            &:hover{
+              color: #ddd;
+            }
+          }
+        }
+
+        li.active a{
+          color: #eeeeee !important;
+        }
+      }
+    }
+  }
+}

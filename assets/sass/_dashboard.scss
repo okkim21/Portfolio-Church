@@ -1,0 +1,118 @@
+/*--------------------------------------------
+Dashboard styles
+----------------------------------------------*/
+
+/* Dashboard */
+.statgrid{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+.familystat {
+  color: #fff;
+  margin-bottom : 10px;
+}
+.familybox {
+  padding: 5px;
+  height: 60px;
+  flex: 1;
+}
+.familytotal{
+  background-color: #3F7577;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.familytotal {
+  span {
+    vertical-align: top;
+  }
+  i {
+    vertical-align: baseline;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 300%;
+    opacity: 0.2;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg);
+    transition: transform 0.3s linear ;
+
+    &:hover {
+      -ms-transform: rotate(-5deg); /* IE 9 */
+      -webkit-transform: rotate(-5deg); /* Safari */
+      transform: rotate(-5deg);
+    }
+  }
+}
+.familymembertotal{
+  background-color: #67773F;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  span {
+    vertical-align: top;
+  }
+  i {
+    vertical-align: baseline;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 300%;
+    opacity: 0.2;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg);
+    transition: transform 0.3s linear ;
+
+    &:hover {
+      -ms-transform: rotate(5deg); /* IE 9 */
+      -webkit-transform: rotate(5deg); /* Safari */
+      transform: rotate(5deg);
+    }
+  }
+}
+.moveouttotal{
+  background-color: #D36B19;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  span {
+    vertical-align: top;
+  }
+  i {
+    vertical-align: baseline;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 300%;
+    opacity: 0.2;
+    -ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg);
+    transition: transform 0.3s linear ;
+
+    &:hover {
+      -ms-transform: rotate(-5deg); /* IE 9 */
+      -webkit-transform: rotate(-5deg); /* Safari */
+      transform: rotate(-5deg);
+    }
+  }
+}
+.number-lg{
+  font-size: 2.5em;
+
+  span {
+    vertical-align: middle;
+  }
+}
+.char-lg{
+  font-size: 2.5em;
+
+  span {
+    vertical-align: middle;
+  }
+}
