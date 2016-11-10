@@ -20,12 +20,18 @@
         }
 
         function getFamilySearch(){
-            return familySearchService.get(searchString)
+            return familySearchService.get()
                 .then(function (result) {
                     return vm.familySearchList = result;
                 },
                 exception.catcher('COU Failed for getting data')
             );
+            //return familySearchService.get(searchString)
+            //    .then(function (result) {
+            //        return vm.familySearchList = result;
+            //    },
+            //    exception.catcher('COU Failed for getting data')
+            //);
 
         }
     }

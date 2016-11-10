@@ -13,7 +13,7 @@ describe('Testing a family search function', function(){
             city: "Syosset",
             state: "NY",
             zipcode: "11791",
-            homePhon: null
+            homePhone: null
         },
         {
             id: 1526,
@@ -28,7 +28,7 @@ describe('Testing a family search function', function(){
             city: "Flushing",
             state: "NY",
             zipcode: "11354",
-            homePhon: null
+            homePhone: null
         }
     ];
 
