@@ -253,6 +253,10 @@ header{
   margin-top: 1px;
 }
 
+input[type="text"]::-webkit-input-placeholder {
+  color: red;
+}
+
 /* Search Result */
 .search-result{
   font-size: 13px;
