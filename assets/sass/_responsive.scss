@@ -14,9 +14,6 @@ Responsive styles for small devices and tablet
 }
 
 @media all and (max-width: 768px) {
-  .cou-side-nav{
-    left: 0px;
-  }
   .statgrid{
     flex-direction: column;
   }
@@ -38,5 +35,15 @@ Responsive styles for small devices and tablet
   }
   .content2 {
     margin-left: 0px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  /* Toggle menu */
+  .cou-side-nav2{
+    left: 0px;
+  }
+  .content2 {
+    margin-left: 230px;
   }
 }
